@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello World!</title>
+</head>
+<body>
+<h1>Hello World!!!!</h1>
+
+the node version is <script>document.write(process.versions.node)</script>
+chrome version is <script>document.write(process.versions.chrome)</script>
+Electron is version <script>document.write(process.versions.electron)</script>
+<script>
+    const index = !!localStorage.getItem("counter") ? Number(localStorage.getItem("counter")) : 0;
+    localStorage.setItem("counter", index + 1);
+    console.log(localStorage);
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+need this in electron setup:
+
+
+mainWindow = new BrowserWindow({
+  ...
+  webPreferences: {
+    webSecurity: false
+  }
+});
+
+
+this is the command to get the project to work:
+
+chromium-browser --disable-web-security --user-data-dir="./"
